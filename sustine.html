@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Susține cauza - Autostrăzi pentru Moldova</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Highway_icon_blue.svg"
+          alt="Logo"
+        />
+        <span>Autostrăzi pentru Moldova</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="proiecte.html">Proiecte</a></li>
+          <li><a href="despre.html">Despre noi</a></li>
+          <li><a href="sustine.html" class="active">Susține cauza</a></li>
+          <li><a href="resurse.html">Resurse</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SUSȚINE CAUZA -->
+    <section id="sustine" class="section">
+      <h2>Susține cauza</h2>
+      <div class="sustine-flex">
+        <div class="donatii">
+          <h3>Donații</h3>
+          <div class="donatie-tabs">
+            <button class="tab-btn active" data-tab="fizica">
+              Persoană Fizică
+            </button>
+            <button class="tab-btn" data-tab="juridica">
+              Persoană Juridică
+            </button>
+          </div>
+          <form id="donatie-form">
+            <div class="tab-content" id="fizica">
+              <input
+                type="text"
+                name="nume"
+                placeholder="Nume complet *"
+                required
+              />
+              <input type="email" name="email" placeholder="Email *" required />
+              <input
+                type="number"
+                name="suma"
+                placeholder="Sumă (RON) *"
+                min="1"
+                required
+              />
+            </div>
+            <div class="tab-content" id="juridica" style="display: none">
+              <input type="text" name="firma" placeholder="Denumire firmă *" />
+              <input type="email" name="email_j" placeholder="Email *" />
+              <input
+                type="number"
+                name="suma_j"
+                placeholder="Sumă (RON) *"
+                min="1"
+              />
+            </div>
+            <button type="submit" class="cta">Donează</button>
+          </form>
+          <div class="donatie-links">
+            <button class="cta secondary" data-scroll="#contact.html">
+              Contactează-ne pentru sponsorizare
+            </button>
+          </div>
+        </div>
+        <div class="voluntariat">
+          <h3>Devino voluntar</h3>
+          <p>
+            Vrei să te implici activ? Completează formularul și alătură-te
+            echipei noastre de voluntari!
+          </p>
+          <button class="cta secondary" data-scroll="#contact.html">
+            Înscrie-te ca voluntar
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <section class="section alt-bg callout">
+      <h2>Rămâi informat</h2>
+      <p>Înscrie-te la newsletter-ul nostru pentru cele mai noi actualizări.</p>
+      <button class="cta">Abonează-te</button>
+    </section>
+    <footer>
+      © 2026 Autostrăzi pentru Moldova. Toate drepturile rezervate.
+    </footer>
+  </body>
+</html>
