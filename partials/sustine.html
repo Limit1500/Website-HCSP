@@ -1,0 +1,34 @@
+<!-- SUSȚINE CAUZA -->
+<section id="sustine" class="section">
+  <h2>Susține cauza</h2>
+  <div class="sustine-flex">
+    <div class="donatii">
+      <h3>Donații</h3>
+      <div class="donatie-tabs">
+        <button class="tab-btn active" data-tab="fizica">Persoană Fizică</button>
+        <button class="tab-btn" data-tab="juridica">Persoană Juridică</button>
+      </div>
+      <form id="donatie-form">
+        <div class="tab-content" id="fizica">
+          <input type="text" name="nume" placeholder="Nume complet *" required>
+          <input type="email" name="email" placeholder="Email *" required>
+          <input type="number" name="suma" placeholder="Sumă (RON) *" min="1" required>
+        </div>
+        <div class="tab-content" id="juridica" style="display:none;">
+          <input type="text" name="firma" placeholder="Denumire firmă *">
+          <input type="email" name="email_j" placeholder="Email *">
+          <input type="number" name="suma_j" placeholder="Sumă (RON) *" min="1">
+        </div>
+        <button type="submit" class="cta">Donează</button>
+      </form>
+      <div class="donatie-links">
+        <button class="cta secondary" data-scroll="#contact">Contactează-ne pentru sponsorizare</button>
+      </div>
+    </div>
+    <div class="voluntariat">
+      <h3>Devino voluntar</h3>
+      <p>Vrei să te implici activ? Completează formularul și alătură-te echipei noastre de voluntari!</p>
+      <button class="cta secondary" data-scroll="#contact">Înscrie-te ca voluntar</button>
+    </div>
+  </div>
+</section>
