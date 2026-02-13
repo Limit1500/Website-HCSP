@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Susține cauza – Autostrăzi pentru Moldova</title>
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="home.html" class="site-logo">
+          <img
+            src="../assets/images/logo-autostrazi.svg"
+            alt="Autostrăzi pentru Moldova"
+          />
+          <span>Autostrăzi pentru Moldova</span>
+        </a>
+        <nav class="main-nav" aria-label="Navigare principală">
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="proiecte.html">Proiecte</a></li>
+            <li><a href="despre-noi.html">Despre noi</a></li>
+            <li><a href="sustine.html" class="is-active">Susține cauza</a></li>
+            <li><a href="resurse.html">Resurse</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button
+            type="button"
+            class="hamburger"
+            aria-label="Deschide meniul"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SUSȚINE CAUZA (dark) -->
+      <section class="section section--dark">
+        <div class="container">
+          <div class="section__header">
+            <p class="section__eyebrow">Implicare</p>
+            <h1 class="section__title">Susține cauza autostrăzilor în Moldova</h1>
+            <p class="section__subtitle">
+              Donațiile și timpul tău ne ajută să transformăm monitorizarea proiectelor
+              într-un efort constant, profesionist și bine documentat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DE CE SĂ SUSȚII? (light) -->
+      <section class="section section--light">
+        <div class="container">
+          <div class="grid grid--3">
+            <article class="card">
+              <h2>Monitorizare independentă</h2>
+              <p>
+                Susținerea ta ne permite să urmărim constant licitațiile, termenele și
+                documentele tehnice, fără influențe politice.
+              </p>
+            </article>
+            <article class="card">
+              <h2>Comunicare clară</h2>
+              <p>
+                Resursele sunt folosite pentru a traduce limbajul tehnic în mesaje
+                accesibile, vizualizări și explicații pentru public.
+              </p>
+            </article>
+            <article class="card">
+              <h2>Presiune constructivă</h2>
+              <p>
+                Mai multe resurse înseamnă mai multă capacitate de a organiza campanii,
+                petiții și întâlniri structurate cu decidenții.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DONAȚIE PERSOANĂ FIZICĂ / JURIDICĂ (dark) -->
+      <section class="section section--dark">
+        <div class="container support-layout">
+          <div>
+            <h2>Donație online</h2>
+            <p class="text-muted">
+              Formularele de mai jos sunt orientative. Poți ajusta ulterior câmpurile,
+              textele de confidențialitate sau integrarea cu un procesator de plăți.
+            </p>
+            <div data-tabs="donatie" class="tabs">
+              <button class="tabs__btn is-active" data-tab="fizica">
+                Persoană fizică
+              </button>
+              <button class="tabs__btn" data-tab="juridica">
+                Persoană juridică
+              </button>
+            </div>
+            <div data-tabs-panels="donatie" style="margin-top: var(--space-3)">
+              <form id="donatie-form" data-redirect="#donatie-simulata" class="form">
+                <div class="tabs__panel is-active" data-panel="fizica">
+                  <div class="field">
+                    <label for="don-nume">Nume complet *</label>
+                    <input id="don-nume" name="nume" type="text" required />
+                  </div>
+                  <div class="field">
+                    <label for="don-email">Email *</label>
+                    <input id="don-email" name="email" type="email" required />
+                  </div>
+                  <div class="field">
+                    <label for="don-suma">Sumă (RON) *</label>
+                    <input
+                      id="don-suma"
+                      name="suma"
+                      type="number"
+                      min="1"
+                      step="1"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="tabs__panel" data-panel="juridica">
+                  <div class="field">
+                    <label for="don-firma">Denumire firmă *</label>
+                    <input id="don-firma" name="firma" type="text" required />
+                  </div>
+                  <div class="field">
+                    <label for="don-email-j">Email *</label>
+                    <input id="don-email-j" name="email_j" type="email" required />
+                  </div>
+                  <div class="field">
+                    <label for="don-suma-j">Sumă (RON) *</label>
+                    <input
+                      id="don-suma-j"
+                      name="suma_j"
+                      type="number"
+                      min="1"
+                      step="1"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full">
+                  Donează acum
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- REDIRECȚIONARE 3.5% & VOLUNTARI -->
+          <div class="stack stack--lg">
+            <section>
+              <h2>Redirecționare 3.5%</h2>
+              <p>
+                Poți susține cauza și prin redirecționarea a 3.5% din impozitul pe
+                venit. Aici poți adăuga ulterior datele organizației și un link către
+                formularul oficial.
+              </p>
+            </section>
+            <section>
+              <h2>Devino voluntar</h2>
+              <p>
+                Dacă ai timp și abilități pe care vrei să le pui în slujba comunității,
+                ne poți scrie și îți vom propune moduri concrete de implicare: cercetare,
+                comunicare, organizare de evenimente.
+              </p>
+              <a href="contact.html" class="btn btn--secondary btn--full">
+                Înscrie-te ca voluntar
+              </a>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALE SUSȚINĂTORI + CTA FINAL (light) -->
+      <section class="section section--light">
+        <div class="container project-layout">
+          <div>
+            <h2>Testimoniale susținători</h2>
+            <p class="text-muted">
+              Aici poți adăuga ulterior citate reale de la persoane sau organizații
+              care susțin inițiativa. Momentan este text dummy.
+            </p>
+            <p>
+              „Este important ca cineva să urmărească, din afara instituțiilor, ce se
+              întâmplă cu proiectele de autostradă. De aceea susținem Autostrăzi pentru
+              Moldova.”
+            </p>
+          </div>
+          <div>
+            <h2>Fă un pas concret</h2>
+            <p>
+              Orice contribuție contează – fie că este financiară, de timp sau de
+              expertiză. Poți începe cu o donație unică, iar pe viitor să devii
+              susținător recurent.
+            </p>
+            <a href="#donatie-form" class="btn btn--primary btn--full" data-scroll="#donatie-form">
+              Începe donația
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© 2026 Autostrăzi pentru Moldova. Toate drepturile rezervate.</p>
+        <p>Platformă civică independentă pentru infrastructură modernă în Moldova.</p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/form-validation.js"></script>
+  </body>
+</html>
+

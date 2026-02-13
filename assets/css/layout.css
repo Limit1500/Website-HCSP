@@ -7,9 +7,8 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  backdrop-filter: blur(18px);
-  background: rgba(250, 252, 255, 0.9);
-  border-bottom: 1px solid rgba(226, 230, 238, 0.9);
+  background: var(--dark-primary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .site-header__inner {
@@ -33,7 +32,7 @@
 .site-logo span {
   font-weight: 600;
   font-size: var(--font-size-sm);
-  color: var(--color-primary);
+  color: var(--light-base);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -60,7 +59,7 @@
   align-items: center;
   padding-block: 6px;
   font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .nav-links a::after {
@@ -71,11 +70,7 @@
   width: 0;
   height: 2px;
   border-radius: 999px;
-  background: linear-gradient(
-    135deg,
-    var(--color-primary),
-    var(--color-primary-soft)
-  );
+  background: var(--accent);
   transition: width var(--transition-normal);
 }
 
@@ -86,7 +81,7 @@
 }
 
 .nav-links a.is-active {
-  color: var(--color-primary);
+  color: var(--accent);
   font-weight: 600;
 }
 

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact – Autostrăzi pentru Moldova</title>
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="home.html" class="site-logo">
+          <img
+            src="../assets/images/logo-autostrazi.svg"
+            alt="Autostrăzi pentru Moldova"
+          />
+          <span>Autostrăzi pentru Moldova</span>
+        </a>
+        <nav class="main-nav" aria-label="Navigare principală">
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="proiecte.html">Proiecte</a></li>
+            <li><a href="despre-noi.html">Despre noi</a></li>
+            <li><a href="sustine.html">Susține cauza</a></li>
+            <li><a href="resurse.html">Resurse</a></li>
+            <li><a href="contact.html" class="is-active">Contact</a></li>
+          </ul>
+          <button
+            type="button"
+            class="hamburger"
+            aria-label="Deschide meniul"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO CONTACT (dark) -->
+      <section class="section section--dark">
+        <div class="container">
+          <div class="section__header">
+            <p class="section__eyebrow">Contact</p>
+            <h1 class="section__title">Intră în legătură cu noi</h1>
+            <p class="section__subtitle">
+              Pentru întrebări, colaborări sau propuneri de proiecte, ne poți scrie
+              folosind formularul de mai jos sau datele oficiale de contact.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMULAR CONTACT & DATE OFICIALE (light) -->
+      <section class="section section--light">
+        <div class="container contact-layout">
+          <div>
+            <h2>Formular de contact</h2>
+            <form id="contact-form" class="form">
+              <div class="field">
+                <label for="ct-nume">Nume complet *</label>
+                <input id="ct-nume" name="nume" type="text" required />
+              </div>
+              <div class="field">
+                <label for="ct-email">Email *</label>
+                <input id="ct-email" name="email" type="email" required />
+              </div>
+              <div class="field">
+                <label for="ct-mesaj">Mesaj *</label>
+                <textarea id="ct-mesaj" name="mesaj" required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">
+                Trimite mesajul
+              </button>
+            </form>
+          </div>
+          <div class="stack stack--lg">
+            <section>
+              <h2>Date oficiale</h2>
+              <p class="text-muted">
+                Aceste date sunt exemplificative. Le poți înlocui cu datele reale ale
+                organizației.
+              </p>
+              <p>Email: <a href="mailto:contact@autostrazimoldova.ro">contact@autostrazimoldova.ro</a></p>
+              <p>Telefon: <a href="tel:+40712345678">+40 712 345 678</a></p>
+              <p>Adresă: Str. Exemplu nr. 1, Iași, România</p>
+            </section>
+
+            <section>
+              <h2>Hartă locație</h2>
+              <div class="card">
+                <p class="text-muted">
+                  [Placeholder hartă] Zonă pentru integrarea unei hărți cu adresa
+                  organizației (Google Maps sau alt serviciu).
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOCIAL MEDIA & FAQ (dark) -->
+      <section class="section section--dark">
+        <div class="container project-layout">
+          <div>
+            <h2>Social media</h2>
+            <p>
+              Ne poți urmări pe rețelele sociale pentru actualizări rapide, anunțuri de
+              evenimente și materiale vizuale despre proiecte.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">
+                <span class="text-muted">Fb</span>
+              </a>
+              <a href="#" aria-label="X / Twitter">
+                <span class="text-muted">X</span>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <span class="text-muted">Ig</span>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h2>Întrebări frecvente (FAQ)</h2>
+            <p class="text-muted">
+              Poți folosi această secțiune pentru a răspunde la întrebările care apar
+              cel mai des din partea cetățenilor și a presei.
+            </p>
+            <ul>
+              <li>Ce fel de date folosiți pentru monitorizare?</li>
+              <li>Colaborați direct cu autoritățile sau sunteți independenți?</li>
+              <li>Cum pot contribui dacă nu pot dona bani?</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© 2026 Autostrăzi pentru Moldova. Toate drepturile rezervate.</p>
+        <p>Platformă civică independentă pentru infrastructură modernă în Moldova.</p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/form-validation.js"></script>
+  </body>
+</html>
+

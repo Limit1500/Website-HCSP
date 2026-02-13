@@ -3,20 +3,20 @@
    ============================ */
 
 :root {
-  /* Colors */
-  --color-primary: #0d3b66;
-  --color-primary-soft: #1b4f82;
-  --color-accent: #2a7f62;
-  --color-bg: #f5f7fa;
-  --color-bg-alt: #ffffff;
-  /* Accent backgrounds for sections (mai saturate) */
-  --color-bg-accent-blue: #d7e4ff;
-  --color-bg-accent-green: #d8f2e5;
-  --color-bg-accent-gold: #ffe5b8;
-  --color-border-subtle: #e2e6ee;
-  --color-text: #1f2933;
-  --color-text-muted: #6b7b93;
-  --color-shadow-soft: rgba(15, 23, 42, 0.06);
+  /* === Global palette: EXACT 4 colors === */
+  --dark-primary: #071522; /* fond închis principal, secțiuni dark, header, hero */
+  --dark-secondary: #10263a; /* nuanță secundară închisă, carduri pe dark, borduri pe dark */
+  --light-base: #ffffff; /* fundal deschis + text pe dark */
+  --accent: #e59f3a; /* butoane, linkuri active, badge-uri */
+
+  /* Derivați (NU culori noi, doar transparențe ale celor de mai sus) */
+  --color-border-subtle: rgba(7, 21, 34, 0.08);
+  --color-shadow-soft: rgba(7, 21, 34, 0.12);
+  --color-shadow-strong: rgba(7, 21, 34, 0.18);
+
+  /* Text */
+  --color-text: var(--dark-primary);
+  --color-text-muted: rgba(7, 21, 34, 0.7);
 
   /* Spacing scale */
   --space-1: 8px;
@@ -84,7 +84,7 @@ body {
   font-size: var(--font-size-base);
   line-height: 1.7;
   color: var(--color-text);
-  background: var(--color-bg);
+  background: var(--light-base);
 }
 
 img {

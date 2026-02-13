@@ -1,0 +1,17 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Autostrzi pentru Moldova</title>
+  <desc id="desc">Pictogram stilizat de autostrad într-un cerc albastru</desc>
+  <defs>
+    <linearGradient id="bg" x1="4" y1="4" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0D3B66"/>
+      <stop offset="1" stop-color="#1B4F82"/>
+    </linearGradient>
+  </defs>
+  <circle cx="20" cy="20" r="18" fill="url(#bg)"/>
+  <path d="M18 32L14 8H11L15 32H18Z" fill="#E5EDF7"/>
+  <path d="M22 32L26 8H29L25 32H22Z" fill="#E5EDF7"/>
+  <path d="M19.25 10H20.75V15.5H19.25V10Z" fill="#FACC15"/>
+  <path d="M19.25 18H20.75V23.5H19.25V18Z" fill="#FACC15"/>
+  <path d="M19.25 26H20.75V30H19.25V26Z" fill="#FACC15"/>
+</svg>
+
