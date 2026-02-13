@@ -9,6 +9,10 @@
   --color-accent: #2a7f62;
   --color-bg: #f5f7fa;
   --color-bg-alt: #ffffff;
+  /* Accent backgrounds for sections (mai saturate) */
+  --color-bg-accent-blue: #d7e4ff;
+  --color-bg-accent-green: #d8f2e5;
+  --color-bg-accent-gold: #ffe5b8;
   --color-border-subtle: #e2e6ee;
   --color-text: #1f2933;
   --color-text-muted: #6b7b93;
@@ -36,11 +40,11 @@
     Helvetica, Arial, sans-serif;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.5rem;
-  --font-size-2xl: 2rem;
-  --font-size-3xl: 2.5rem;
+  --font-size-base: 0.98rem;
+  --font-size-lg: 1.12rem;
+  --font-size-xl: 1.48rem;
+  --font-size-2xl: 1.9rem;
+  --font-size-3xl: 2.35rem;
 
   /* Elevation */
   --shadow-card: 0 12px 30px rgba(15, 23, 42, 0.06);
@@ -78,7 +82,7 @@ body {
   min-height: 100vh;
   font-family: var(--font-sans);
   font-size: var(--font-size-base);
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--color-text);
   background: var(--color-bg);
 }
@@ -120,12 +124,14 @@ h4 {
 
 h1 {
   font-size: var(--font-size-3xl);
-  line-height: 1.15;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
 }
 
 h2 {
   font-size: var(--font-size-2xl);
-  line-height: 1.2;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
 }
 
 h3 {
@@ -135,11 +141,16 @@ h3 {
 
 p {
   margin: 0 0 var(--space-2);
-  color: var(--color-text-muted);
+  color: var(--color-text);
 }
 
 small {
   font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+/* Utility */
+.text-muted {
   color: var(--color-text-muted);
 }
 
@@ -156,7 +167,7 @@ small {
 
 @media (min-width: 768px) {
   .section {
-    padding-block: 80px;
+    padding-block: 96px;
   }
 }
 
@@ -166,7 +177,7 @@ small {
 
 .section__header {
   text-align: center;
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-5);
 }
 
 .section__eyebrow {
@@ -185,5 +196,6 @@ small {
 .section__subtitle {
   max-width: 640px;
   margin-inline: auto;
+  font-size: var(--font-size-sm);
 }
 

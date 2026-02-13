@@ -14,7 +14,7 @@
       <div class="container site-header__inner">
         <a href="home.html" class="site-logo">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Highway_icon_blue.svg"
+            src="../assets/images/logo-autostrazi.svg"
             alt="Autostrăzi pentru Moldova"
           />
           <span>Autostrăzi pentru Moldova</span>
@@ -41,7 +41,7 @@
     </header>
 
     <main>
-      <!-- HERO PROIECTE -->
+      <!-- HERO PROIECTE (fundal închis, text deschis ca în home) -->
       <section class="hero projects-hero">
         <div class="container hero__inner">
           <div>
@@ -61,7 +61,7 @@
         </div>
       </section>
 
-      <!-- LISTĂ PROIECTE -->
+      <!-- FILTRARE / CATEGORII PROIECTE + GRID -->
       <section class="section">
         <div class="container">
           <div class="section__header">
@@ -70,6 +70,15 @@
             <p class="section__subtitle">
               Fiecare proiect are o pagină dedicată cu descriere, stadiu actual,
               etape-cheie și resurse pentru cetățeni și presă.
+            </p>
+          </div>
+
+          <!-- Filtrare / categorii – UI static pentru moment -->
+          <div class="card" style="margin-bottom: var(--space-4)">
+            <p class="card__eyebrow">Filtrare proiecte</p>
+            <p class="text-muted">
+              Aici poți adăuga ulterior filtre funcționale (de ex. în funcție de
+              județ, stadiu, tip proiect). Momentan blocul este de prezentare.
             </p>
           </div>
 
@@ -122,8 +131,64 @@
         </div>
       </section>
 
-      <!-- CTA SUSȚINERE -->
+      <!-- HARTĂ GENERALĂ INFRASTRUCTURĂ -->
+      <section class="section section--green">
+        <div class="container">
+          <div class="section__header">
+            <p class="section__eyebrow">Hartă generală</p>
+            <h2 class="section__title">Infrastructura rutieră majoră din Moldova</h2>
+            <p class="section__subtitle">
+              Acest bloc poate găzdui ulterior o hartă generală a infrastructurii – cu
+              autostrăzi existente, în execuție și în planificare.
+            </p>
+          </div>
+          <div class="card">
+            <p class="text-muted">
+              [Placeholder hartă generală] Imagine sau hartă interactivă cu toate
+              proiectele principale de autostradă și drumuri expres relevante pentru
+              regiune.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATUS GENERAL PROIECTE + CTA -->
       <section class="section section--alt">
+        <div class="container">
+          <div class="section__header">
+            <p class="section__eyebrow">Status general</p>
+            <h2 class="section__title">Cum arată imaginea de ansamblu</h2>
+            <p class="section__subtitle">
+              Un rezumat al stadiului principalelor proiecte – util pentru comunicate,
+              prezentări sau discuții publice.
+            </p>
+          </div>
+          <div class="grid grid--2">
+            <div class="card">
+              <h3>Indicatori sintetici</h3>
+              <ul>
+                <li>Proiecte în monitorizare: 3</li>
+                <li>Proiecte cu lucrări începute: 2</li>
+                <li>Proiecte în faza de studii: 1</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Concluzii de etapă</h3>
+              <p>
+                Ritmul proiectelor este inegal între tronsoane și necesită monitorizare
+                constantă. Implicarea publică și presiunea argumentată pot accelera
+                punctele critice din lanțul de decizie.
+              </p>
+              <a href="sustine.html" class="btn btn--primary btn--full">
+                Susține monitorizarea proiectelor
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA SUSȚINERE -->
+      <section class="section">
         <div class="container">
           <div class="callout">
             <div class="callout__text">

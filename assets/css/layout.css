@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 68px;
 }
 
 .site-logo {
@@ -176,7 +176,7 @@ main {
 /* Grid utilities */
 .grid {
   display: grid;
-  gap: var(--space-3);
+  gap: var(--space-4);
 }
 
 .grid--2 {
@@ -197,6 +197,11 @@ main {
   .grid--3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+/* Extra spacing between secțiuni */
+main > .section + .section {
+  margin-top: var(--space-3);
 }
 
 .stack {

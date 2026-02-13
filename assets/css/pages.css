@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-2);
-  margin-top: var(--space-3);
+  margin-top: var(--space-4);
 }
 
 @media (min-width: 768px) {
@@ -46,13 +46,8 @@
   }
 }
 
-/* Projects overview */
-.projects-hero {
-  background: #ffffff;
-}
-
 .projects-grid {
-  margin-top: var(--space-3);
+  margin-top: var(--space-4);
 }
 
 .projects-grid .card {
@@ -98,7 +93,7 @@
 
 /* Monitoring page */
 .monitoring-grid {
-  margin-top: var(--space-3);
+  margin-top: var(--space-4);
 }
 
 /* About */
@@ -115,6 +110,48 @@
   .about-impact__grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+/* Colored section variants */
+.section--blue {
+  background: var(--color-bg-accent-blue);
+}
+
+.section--green {
+  background: var(--color-bg-accent-green);
+}
+
+.section--gold {
+  background: var(--color-bg-accent-gold);
+}
+
+/* Dark band sections (similar cu hero) */
+.section--band-dark {
+  background: radial-gradient(circle at top left, #1b4f82 0, #0b2c4a 45%, #020617 100%);
+  color: #e5e7eb;
+}
+
+.section--band-dark h1,
+.section--band-dark h2,
+.section--band-dark h3,
+.section--band-dark h4,
+.section--band-dark p,
+.section--band-dark li,
+.section--band-dark small {
+  color: #e5e7eb;
+}
+
+.section--band-dark .text-muted {
+  color: rgba(226, 232, 240, 0.82);
+}
+
+.section--band-dark a {
+  color: #bfdbfe;
+}
+
+.section--band-dark a:hover,
+.section--band-dark a:focus-visible {
+  color: #e0f2fe;
 }
 
 /* Support */

@@ -5,7 +5,7 @@
 /* Hero */
 .hero {
   position: relative;
-  padding-block: 72px 72px;
+  padding-block: 80px 72px;
   background: radial-gradient(circle at top left, #1b4f82 0, #0b2c4a 45%, #020617 100%);
   color: #ffffff;
   overflow: hidden;
@@ -13,7 +13,7 @@
 
 @media (min-width: 768px) {
   .hero {
-    padding-block: 96px 96px;
+    padding-block: 112px 96px;
   }
 }
 
@@ -32,7 +32,7 @@
 .hero__inner {
   position: relative;
   display: grid;
-  gap: var(--space-4);
+  gap: var(--space-5);
 }
 
 @media (min-width: 900px) {
@@ -52,15 +52,15 @@
 }
 
 .hero__title {
-  font-size: 2rem;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  margin-bottom: var(--space-2);
+  font-size: 2.1rem;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-3);
 }
 
 @media (min-width: 768px) {
   .hero__title {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -68,7 +68,7 @@
   font-size: var(--font-size-lg);
   max-width: 38rem;
   color: rgba(226, 232, 240, 0.96);
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
 }
 
 .hero__cta-row {
@@ -104,7 +104,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 10px 22px;
+  padding: 11px 24px;
   border-radius: var(--radius-button);
   border: 1px solid transparent;
   font-size: var(--font-size-sm);
@@ -173,7 +173,7 @@
 }
 
 .card--soft {
-  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  background: #ffffff;
 }
 
 .card:hover {

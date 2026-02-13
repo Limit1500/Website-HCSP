@@ -14,7 +14,7 @@
       <div class="container site-header__inner">
         <a href="home.html" class="site-logo">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Highway_icon_blue.svg"
+            src="../assets/images/logo-autostrazi.svg"
             alt="Autostrăzi pentru Moldova"
           />
           <span>Autostrăzi pentru Moldova</span>
@@ -41,8 +41,8 @@
     </header>
 
     <main>
-      <!-- HERO PROIECT -->
-      <section class="section">
+      <!-- HERO PROIECT + PREZENTARE GENERALĂ (bandă închisă) -->
+      <section class="section section--band-dark">
         <div class="container project-layout">
           <div>
             <p class="section__eyebrow">Proiect 3</p>
@@ -56,8 +56,90 @@
               Proiectul se află în etapa de studiu de fezabilitate, motiv pentru care
               calitatea datelor și a consultării publice este esențială.
             </p>
+          </div>
 
-            <h2>Etape &amp; timeline</h2>
+          <aside class="project-meta">
+            <div class="project-meta__item">
+              <p class="project-meta__label">Status curent</p>
+              <p class="project-meta__value">Studiu de fezabilitate</p>
+              <div style="margin-top: var(--space-2)">
+                <div class="progress">
+                  <div class="progress__track">
+                    <div class="progress__value" style="width: 15%"></div>
+                  </div>
+                  <div class="progress__label">
+                    <span>Progres estimat</span>
+                    <span>15%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-meta__item">
+              <p class="project-meta__label">Impact estimat</p>
+              <ul>
+                <li>Conectarea rapidă la A7 și viitoarele coridoare europene</li>
+                <li>
+                  Scurtarea timpilor de acces la infrastructura medicală și educațională
+                </li>
+                <li>Dezvoltarea turismului și a IMM-urilor locale</li>
+              </ul>
+            </div>
+
+            <div class="project-meta__item">
+              <p class="project-meta__label">Susține proiectul</p>
+              <p>
+                Avem nevoie de sprijin civic pentru ca studiile să fie solide, iar
+                proiectul să nu rămână blocat „pe hârtie”.
+              </p>
+              <a href="sustine.html" class="btn btn--primary btn--full">
+                Donează pentru DX5
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- DATE TEHNICE & HARTĂ TRASEU -->
+      <section class="section">
+        <div class="container project-layout">
+          <div>
+            <h2>Date tehnice</h2>
+            <p class="text-muted">
+              Informațiile tehnice pentru DX5 sunt în fază de rafinare. Mai jos găsești
+              un exemplu de structură pentru datele viitoare.
+            </p>
+            <ul>
+              <li>Lungime totală estimată: ~ 80–100 km</li>
+              <li>Tip: drum expres cu separare fizică a sensurilor</li>
+              <li>Viteză de proiectare: ~ 100 km/h</li>
+              <li>Rol: legătură între Bacău și zona montană Neamț</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Hartă traseu</h2>
+            <div class="card">
+              <p class="text-muted">
+                [Placeholder hartă traseu DX5] Zonă pentru harta detaliată a drumului
+                expres, cu conexiunile la rețeaua existentă și la A7.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATUS & PROGRES + TIMELINE ETAPE -->
+      <section class="section section--alt">
+        <div class="container project-layout">
+          <div>
+            <h2>Status &amp; progres</h2>
+            <p>
+              Ca proiect aflat în faza de studiu, DX5 are nevoie de atenție publică
+              pentru a nu fi împins la nesfârșit pe lista de „intenții bune”.
+            </p>
+          </div>
+          <div>
+            <h2>Timeline etape</h2>
             <div class="timeline">
               <div class="timeline__item">
                 <span class="timeline__dot"></span>
@@ -88,44 +170,58 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <aside class="project-meta">
-            <div class="project-meta__item">
-              <p class="project-meta__label">Status curent</p>
-              <p class="project-meta__value">Studiu de fezabilitate</p>
-              <div style="margin-top: var(--space-2)">
-                <div class="progress">
-                  <div class="progress__track">
-                    <div class="progress__value" style="width: 15%"></div>
-                  </div>
-                  <div class="progress__label">
-                    <span>Progres estimat</span>
-                    <span>15%</span>
-                  </div>
-                </div>
+      <!-- DOCUMENTAȚIE & RESURSE + GALERIE MEDIA -->
+      <section class="section">
+        <div class="container project-layout">
+          <div>
+            <h2>Documentație &amp; resurse</h2>
+            <p class="text-muted">
+              Bloc rezervat pentru studii, note de prezentare și alte documente
+              relevante odată ce acestea devin publice.
+            </p>
+            <ul>
+              <li><a href="#">Raport preliminar DX5 (placeholder)</a></li>
+              <li><a href="#">Analiză trafic și oportunitate (placeholder)</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Galerie media</h2>
+            <div class="grid grid--2">
+              <div class="card">
+                <p class="text-muted">
+                  [Foto zonă de studiu] Placeholder pentru fotografii de teren.
+                </p>
+              </div>
+              <div class="card">
+                <p class="text-muted">
+                  [Hartă concept] Placeholder pentru ilustrații ale proiectului.
+                </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="project-meta__item">
-              <p class="project-meta__label">Impact estimat</p>
-              <ul>
-                <li>Conectarea rapidă la A7 și viitoarele coridoare europene</li>
-                <li>Scurtarea timpilor de acces la infrastructura medicală și educațională</li>
-                <li>Dezvoltarea turismului și a IMM-urilor locale</li>
-              </ul>
-            </div>
-
-            <div class="project-meta__item">
-              <p class="project-meta__label">Susține proiectul</p>
+      <!-- CTA DONAȚIE PROIECT -->
+      <section class="section section--gold">
+        <div class="container">
+          <div class="callout">
+            <div class="callout__text">
+              <h2>Susține proiectul DX5</h2>
               <p>
-                Avem nevoie de sprijin civic pentru ca studiile să fie solide, iar
-                proiectul să nu rămână blocat „pe hârtie”.
+                Ajută-ne să menținem DX5 pe agenda publică și să urmărim atent calitatea
+                studiilor și deciziilor de finanțare.
               </p>
+            </div>
+            <div class="stack">
               <a href="sustine.html" class="btn btn--primary btn--full">
                 Donează pentru DX5
               </a>
             </div>
-          </aside>
+          </div>
         </div>
       </section>
     </main>
